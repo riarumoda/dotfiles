@@ -8,7 +8,7 @@ I actually used rxyhn dots before, and i like it. but his awesome modules spawne
 ```
 i3-gaps nitrogen xfce4-notifyd brightnessctl dex light-locker alacritty pcmanfm-gtk3 lxtask-gtk3 scrot rofi dmenu lxappearance-gtk3 lightdm lightdm-gtk-greeter noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome gtk-engine-murrine polybar papirus-icon-theme
 ```
-Optional but recommended :
+   Optional but recommended :
 ```
 arandr gpicview l3afpad
 ```
@@ -16,7 +16,7 @@ arandr gpicview l3afpad
 ```
 picom-git polkit-dumb-agent-git volantes-cursors
 ```
-Optional but recommended from AUR :
+   Optional but recommended from AUR :
 ```
 uwufetch qt5-styleplugins gtk3-classic cava
 ```
