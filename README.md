@@ -15,8 +15,9 @@ I actually used rxyhn dots before, and i like it. but his awesome modules spawne
 - QT5 Theming : 🚸 (See GTK2 Theming.)
 
 # Screenshots
-![desktop](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/desktop.png)
-![rofi](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/rofi.png)
+**Desktop** | ![desktop](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/desktop.png)
+**App Menu** | ![rofi](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/rofi.png)
+
 ![alacritty](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/alacritty-and-gtk-apps.png)
 ![audacious](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/qt-apps.png)
 
