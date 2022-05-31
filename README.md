@@ -30,3 +30,10 @@ sudo cp -r wallpapers/* /usr/share/pixmaps
 ```
 And you are done! Continue to the post-install section.
 # Post Install
+On the first login, polybar and i3 will load successfuly, but nitrogen does not. 
+
+To fix it, Open Nitrogen (via Super+D, from rofi) and click preferences. Add directory for wallpapers (on my setup i put it on /usr/share/pixmaps) and click OK. Select the wallpapers and click apply.
+
+For GTK themes, open lxappearance, under "Widget", select ```Materia-moredark-compact```, for fonts select ```Noto Sans CJK JP Regular```, under "Icon theme" select ```Papirus Dark```, under "Mouse cursor" select ```Volantes Cursors```.
+
+For Qt themes, (i assumed you installed qt5-styleplugins) open ```/etc/environment``` using your favourite text editor and put this lines on the bottom of the text : ```QT_QPA_PLATFORMTHEME=gtk2```
