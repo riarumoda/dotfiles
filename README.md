@@ -109,7 +109,7 @@ On this mode, pressing :
 - ```N``` key to disable the second display.
 
 # Special thanks
-- [rxyhn](https://github.com/rxyhm) For Picom config files and Rofi custom theme.
+- [rxyhn](https://github.com/rxyhn) For Picom config files and Rofi custom theme.
 - [EvanKoe](https://github.com/EvanKoe) For i3-gaps & alacritty config files.
 - [ldy3112](https://github.com/ldy3112) For helping me on polybar stuff and make me stay on i3-gaps.
 - [nana-4](https://github.com/nana-4) For the Materia GTK Theme (dark-compact varitant)
