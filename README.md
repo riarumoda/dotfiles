@@ -19,9 +19,8 @@ I actually used rxyhn dots before, and i like it. but his awesome modules spawne
 | --- | --- |
 | **Desktop** | ![desktop](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/desktop.png) |
 | **App Menu** | ![rofi](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/rofi.png) |
-
-![alacritty](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/alacritty-and-gtk-apps.png)
-![audacious](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/qt-apps.png)
+| **Terminal & GTK3 Apps** | ![alacritty](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/alacritty-and-gtk-apps.png) |
+| **QT5 Apps** | ![audacious](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/qt-apps.png) |
 
 # Installation (Arch Linux Only, fresh install)
 Install the deps first :
