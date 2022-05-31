@@ -4,35 +4,20 @@ This is my personal config files for i3-gaps. Based on EvanKoe & rxyhn dotfiles.
 # Purpose of this rice
 I actually used rxyhn dots before, and i like it. but his awesome modules spawned on the second monitor if i plug a second monitor to my laptop and got annoyed by it. After some researching, i3 does not do this and used EvanKoe dots on it (2022 one). But my head went "Frick it. Combine both of them." And this dots born.
 # Status of this rice
-i3-gaps : ✅
-
-alacritty : ✅
-
-polybar : ✅
-
-picom : ✅
-
-rofi : ✅
-
-GTK2 Theming : 🚸 (Buggy, mainly used to translate GTK theme to Qt Only.)
-
-GTK3 Theming : ✅
-
-GTK4 Theming : ✅
-
-QT5 Theming : 🚸 (See GTK2 Theming.)
+- i3-gaps : ✅
+- alacritty : ✅
+- polybar : ✅
+- picom : ✅
+- rofi : ✅
+- GTK2 Theming : 🚸 (Buggy, mainly used to translate GTK theme to QT5 Only.)
+- GTK3 Theming : ✅
+- GTK4 Theming : ✅
+- QT5 Theming : 🚸 (See GTK2 Theming.)
 
 # Screenshots
-Desktop
 ![desktop](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/desktop.png)
-
-Rofi Menu
 ![rofi](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/rofi.png)
-
-Alacritty and PCManFM (GTK3)
 ![alacritty](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/alacritty-and-gtk-apps.png)
-
-Audacious (QT5)
 ![audacious](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/qt-apps.png)
 
 # Installation (Arch Linux Only, fresh install)
@@ -69,3 +54,32 @@ To fix it, Open Nitrogen (via Super+D, from rofi) and click preferences. Add dir
 For GTK themes, open lxappearance, under "Widget", select ```Materia-moredark-compact```, for fonts select ```Noto Sans CJK JP Regular```, under "Icon theme" select ```Papirus Dark```, under "Mouse cursor" select ```Volantes Cursors```.
 
 For Qt themes, (i assumed you installed qt5-styleplugins) open ```/etc/environment``` using your favourite text editor and put this lines on the bottom of the text : ```QT_QPA_PLATFORMTHEME=gtk2```
+
+For notifications, run ```xfce4-notifyd-config``` from rofi, and change default position to bottom right.
+
+# Keybindings
+```Super + L``` Loackscreen
+
+```Super + W``` Terminal
+
+```Super + E``` File Manager
+
+```Super + D``` Application Menu
+
+```Print``` Screenshot
+
+```Super + Q``` Quit an app
+
+```Super + 1 ... 0``` Switch workspace
+
+For more keybindings, goto ~/.config/i3/config
+
+# Special: STFU Mode
+This feature is actually from EvanKoe dots and it still used in this dots!
+
+To access it, press ```Super + BackSpace``` key to enter STFU Mode.
+
+On this Mode pressing :
+- ```Ctrl + S``` to shutdown the system.
+- ```r``` key to reboot.
+- ```l``` key to log out.
