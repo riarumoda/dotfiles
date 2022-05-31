@@ -25,11 +25,11 @@ I actually used rxyhn dots before, and i like it. but his awesome modules spawne
 # Installation (Arch Linux Only, fresh install)
 Install the deps first :
 ```
-i3-gaps nitrogen xfce4-notifyd brightnessctl dex light-locker alacritty pcmanfm-gtk3 lxtask-gtk3 scrot rofi dmenu lxappearance-gtk3 lightdm lightdm-gtk-greeter noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome gtk-engine-murrine polybar papirus-icon-theme
+i3-gaps nitrogen xfce4-notifyd brightnessctl dex light-locker alacritty pcmanfm-gtk3 scrot rofi dmenu lxappearance-gtk3 lightdm lightdm-gtk-greeter noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome gtk-engine-murrine polybar papirus-icon-theme
 ```
 Optional but recommended :
 ```
-arandr gpicview l3afpad
+arandr gpicview l3afpad lxtask-gtk3
 ```
 Then from AUR :
 ```
@@ -58,6 +58,19 @@ For GTK themes, open lxappearance, under "Widget", select ```Materia-moredark-co
 For Qt themes, (i assumed you installed qt5-styleplugins) open ```/etc/environment``` using your favourite text editor and put this lines on the bottom of the text : ```QT_QPA_PLATFORMTHEME=gtk2```
 
 For notifications, run ```xfce4-notifyd-config``` from rofi, and change default position to bottom right.
+
+For LightDM, open/create ```/etc/lightdm/lightdm-gtk-greeter.conf``` with you favourite text editor, remove all stuff inside the file, and paste with this new config :
+```
+[greeter]
+theme-name = Materia-moredark-compact
+icon-theme-name = Papirus-Dark
+font-name = Noto Sans CJK JP Medium 11
+xft-rgba = rgb
+xft-hintstyle = hintfull
+indicators =
+background = /usr/share/pixmaps/main.png
+```
+Save it and reboot.
 
 # Keybindings
 - ```Super + L``` Loackscreen
