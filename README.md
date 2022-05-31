@@ -58,28 +58,43 @@ For Qt themes, (i assumed you installed qt5-styleplugins) open ```/etc/environme
 For notifications, run ```xfce4-notifyd-config``` from rofi, and change default position to bottom right.
 
 # Keybindings
-```Super + L``` Loackscreen
+- ```Super + L``` Loackscreen
+- ```Super + W``` Terminal
+- ```Super + E``` File Manager
+- ```Super + D``` Application Menu
+- ```Print``` Screenshot
+- ```Super + Q``` Quit an app
+- ```Super + 1 ... 0``` Switch workspace
 
-```Super + W``` Terminal
-
-```Super + E``` File Manager
-
-```Super + D``` Application Menu
-
-```Print``` Screenshot
-
-```Super + Q``` Quit an app
-
-```Super + 1 ... 0``` Switch workspace
-
-For more keybindings, goto ~/.config/i3/config
+For more keybindings, goto ```~/.config/i3/config```
 
 # Special: STFU Mode
 This feature is actually from EvanKoe dots and it still used in this dots!
 
 To access it, press ```Super + BackSpace``` key to enter STFU Mode.
 
-On this Mode pressing :
+Press again ```Super + BackSpace``` key to exit STFU Mode.
+
+On this Mode, pressing :
 - ```Ctrl + S``` to shutdown the system.
 - ```r``` key to reboot.
-- ```l``` key to log out.
+- ```l``` key to log out. like as EvanKoe intended to.
+
+# Special: Display Manager (Switcher?)
+I don't even know EvanKoe dots had this until i see it under his i3 configs. and of course this thing still being used on this dots.
+
+To access it, press ```Super + P``` to enter this mode.
+
+Press ```Super + P``` again to exit.
+
+On this mode, pressing :
+- ```R``` key to extend display to the right side.
+- ```L``` key to extend display to the left side.
+- ```D``` key to duplicate main display to the second display.
+- ```N``` key to disable the second display.
+
+# Special thanks
+- [rxyhn](https://github.com/rxyhm) For Picom config files and Rofi custom theme.
+- [EvanKoe](https://github.com/EvanKoe) For i3-gaps & alacritty config files.
+- [ldy3112](https://github.com/ldy3112) For helping me on polybar stuff and make me stay on i3-gaps.
+- [nana-4](https://github.com/nana-4) For the Materia GTK Theme (dark-compact varitant)
