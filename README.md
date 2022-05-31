@@ -112,4 +112,5 @@ On this mode, pressing :
 - [rxyhn](https://github.com/rxyhn) For Picom config files and Rofi custom theme.
 - [EvanKoe](https://github.com/EvanKoe) For i3-gaps & alacritty config files.
 - [ldy3112](https://github.com/ldy3112) For helping me on polybar stuff and make me stay on i3-gaps.
-- [nana-4](https://github.com/nana-4) For the Materia GTK Theme (dark-compact varitant)
+- [nana-4](https://github.com/nana-4) For the Materia GTK Theme. (dark-compact varitant)
+- Rectify11 Team for the wallpapers.
