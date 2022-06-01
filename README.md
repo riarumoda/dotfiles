@@ -21,6 +21,7 @@ I actually used rxyhn dots before, and i like it. but his awesome modules spawne
 | **App Menu** | ![rofi](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/rofi.png) |
 | **Terminal & GTK3 Apps** | ![alacritty](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/alacritty-and-gtk-apps.png) |
 | **QT5 Apps** | ![audacious](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/qt-apps.png) |
+| **Login Screen/Lockscreen** | ![lightdm](https://github.com/Putu-Justine/dotfiles/blob/master/.github-assets/screenshots/loginscreen.png) |
 
 # Installation (Arch Linux Only, fresh install)
 Install the deps first :
@@ -33,11 +34,11 @@ arandr gpicview l3afpad lxtask-gtk3
 ```
 Then from AUR :
 ```
-picom-git polkit-dumb-agent-git volantes-cursors
+picom-git volantes-cursors
 ```
 Optional but recommended from AUR :
 ```
-uwufetch qt5-styleplugins gtk3-classic cava
+uwufetch polkit-dumb-agent-git qt5-styleplugins gtk3-classic cava
 ```
 Clone my dots and copy to the desired folders
 ```
@@ -59,7 +60,7 @@ For Qt themes, (i assumed you installed qt5-styleplugins) open ```/etc/environme
 
 For notifications, run ```xfce4-notifyd-config``` from rofi, and change default position to bottom right.
 
-For LightDM, open/create ```/etc/lightdm/lightdm-gtk-greeter.conf``` with you favourite text editor, remove all stuff inside the file, and paste with this new config :
+For LightDM, open/create ```/etc/lightdm/lightdm-gtk-greeter.conf``` with your favourite text editor, remove all stuff inside the file, and paste with this new config :
 ```
 [greeter]
 theme-name = Materia-moredark-compact
@@ -81,7 +82,7 @@ Save it and reboot.
 - ```Super + Q``` Quit an app
 - ```Super + 1 ... 0``` Switch workspace
 
-For more keybindings, goto ```~/.config/i3/config```
+For more keybindings, go to ```~/.config/i3/config```
 
 # Special: STFU Mode
 This feature is actually from EvanKoe dots and it still used in this dots!
@@ -112,5 +113,5 @@ On this mode, pressing :
 - [rxyhn](https://github.com/rxyhn) For Picom config files and Rofi custom theme.
 - [EvanKoe](https://github.com/EvanKoe) For i3-gaps & alacritty config files.
 - [ldy3112](https://github.com/ldy3112) For helping me on polybar stuff and make me stay on i3-gaps.
-- [nana-4](https://github.com/nana-4) For the Materia GTK Theme. (dark-compact varitant)
+- [nana-4](https://github.com/nana-4) For the Materia GTK Theme. (dark-compact variant)
 - Rectify11 Team for the wallpapers.
