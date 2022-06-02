@@ -26,11 +26,11 @@ I actually used rxyhn dots before, and i like it. but his awesome modules spawne
 # Installation (Arch Linux Only, fresh install)
 Install the deps first :
 ```
-xorg-server i3-gaps nitrogen xfce4-notifyd brightnessctl dex light-locker alacritty pcmanfm-gtk3 scrot rofi dmenu lxappearance-gtk3 lightdm lightdm-gtk-greeter noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome gtk-engine-murrine polybar papirus-icon-theme
+xorg-server i3-gaps nitrogen xfce4-notifyd brightnessctl dex light-locker alacritty pcmanfm-gtk3 scrot rofi dmenu lxappearance-gtk3 lightdm lightdm-gtk-greeter noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome gtk-engine-murrine polybar papirus-icon-theme pipewire pipewire-alsa pipewire-pulse pipewire-jack
 ```
 Optional but recommended :
 ```
-arandr gpicview l3afpad lxtask-gtk3
+arandr gpicview l3afpad lxtask-gtk3 pavucontrol mpv
 ```
 Then from AUR :
 ```
