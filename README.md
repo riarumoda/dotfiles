@@ -38,7 +38,7 @@ picom-git volantes-cursors
 ```
 Optional but recommended from AUR :
 ```
-uwufetch polkit-dumb-agent-git qt5-styleplugins gtk3-classic cava
+uwufetch polkit-dumb-agent-git qt5-styleplugins gtk3-classic cava libxfce4ui-nocsd
 ```
 Clone my dots and copy to the desired folders
 ```
