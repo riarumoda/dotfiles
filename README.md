@@ -48,6 +48,10 @@ cp -r configs/* ~/.config
 sudo cp -r themes/* /usr/share/themes
 sudo cp -r wallpapers/* /usr/share/pixmaps
 ```
+Don't forget to enable lightdm service
+```
+sudo systemctl enable lightdm.service
+```
 And you are done! Continue to the post-install section.
 # Post Install
 On the first login, polybar and i3 will load successfuly, but nitrogen does not. 
