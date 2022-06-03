@@ -53,6 +53,11 @@ font pango:Noto Sans Mono Medium 11
 #
 #=========================================================
 
+#===================
+# Set super as $mod
+#===================
+set $mod Mod4
+
 #==================================
 # keybindings for quick app launch
 #
@@ -69,11 +74,6 @@ bindsym $mod+e exec pcmanfm
 bindsym $mod+q kill
 bindsym Print exec scrot
 bindsym $mod+d exec rofi -show drun -theme "~/.config/rofi.rasi" -run-shell-command '{terminal} -e bash -ic "{cmd} && read"'
-
-#===================
-# Set super as $mod
-#===================
-set $mod Mod4
 
 #================================================
 # Drag floating windows to their wanted position
