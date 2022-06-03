@@ -113,6 +113,17 @@ On this mode, pressing :
 - ```D``` key to duplicate main display to the second display.
 - ```N``` key to disable the second display.
 
+# Special: Compositor Enabler/Disabler
+Want to play osu!mania but picom running in the background as a compositor making the game latency higher. So i created this mode to make it easy to turn off the compositor.
+
+To access it, press ```Ctrl + Super + C``` to enter this mode.
+
+Press ```Ctrl + Super + C``` again to exit.
+
+On this mode, pressing :
+- ```S``` key to kickstart picom again after it got killed.
+- ```K``` key to kill picom. (via ```killall```)
+
 # Special thanks
 - [rxyhn](https://github.com/rxyhn) For Picom config files and Rofi custom theme.
 - [EvanKoe](https://github.com/EvanKoe) For i3-gaps & alacritty config files.

@@ -293,3 +293,21 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +3%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 3%-
 
+#================================================================
+# Custom : Compositor enabler/disabler, by myself, therealmodder
+#
+# Ctrl + Super + C to enter this mode.
+# Ctrl + Super + C again to exit.
+#
+# Key when on this mode :
+# S key to kickstart the compositor after being disabled.
+# K key to kill the compositor.
+#=================================================================
+mode "compositor" {
+	bindsym s exec --no-startup-id picom --config $HOME/.config/picom.conf --experimental-backends
+	bindsym k exec killall "picom"
+        bindsym Escape mode "default"
+        bindsym Ctrl+$mod+c mode "default"
+}
+bindsym Ctrl+$mod+c mode "compositor"
+
