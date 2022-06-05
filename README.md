@@ -13,6 +13,7 @@ I actually used rxyhn dots before, and i like it. but his awesome modules spawne
 - GTK3 Theming : ✅
 - GTK4 Theming : ✅
 - QT5 Theming : 🚸 (See GTK2 Theming.)
+- LightDM WebKit2 Theming : ✅
 
 # Screenshots
 | Location | Screenshots |
@@ -26,7 +27,7 @@ I actually used rxyhn dots before, and i like it. but his awesome modules spawne
 # Installation (Arch Linux Only, fresh install)
 Install the deps first :
 ```
-xorg-server i3-gaps nitrogen xfce4-notifyd brightnessctl dex light-locker alacritty pcmanfm-gtk3 scrot rofi dmenu lxappearance-gtk3 lightdm lightdm-gtk-greeter noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome gtk-engine-murrine polybar papirus-icon-theme pipewire pipewire-alsa pipewire-pulse pipewire-jack
+xorg-server i3-gaps nitrogen xfce4-notifyd brightnessctl dex light-locker alacritty pcmanfm-gtk3 scrot rofi dmenu lxappearance-gtk3 lightdm lightdm-webkit2-greeter noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-font-awesome gtk-engine-murrine polybar papirus-icon-theme pipewire pipewire-alsa pipewire-pulse pipewire-jack
 ```
 Optional but recommended :
 ```
@@ -46,11 +47,15 @@ git clone https://github.com/Putu-Justine/dotfiles.git
 cd dotfiles
 cp -r configs/* ~/.config
 sudo cp -r themes/* /usr/share/themes
+sudo cp -r lightdm-themes/* /usr/share/lightdm-webkit/themes
 sudo cp -r wallpapers/* /usr/share/pixmaps
 ```
-Don't forget to enable lightdm service
+Don't forget to enable lightdm service & set lightdm greeter to webkit one. See [ArchWiki](https://wiki.archlinux.org/title/LightDM#Greeter) for more details.
 ```
 sudo systemctl enable lightdm.service
+```
+```
+greeter-session=lightdm-webkit2-greeter
 ```
 And you are done! Continue to the post-install section.
 # Post Install
@@ -64,16 +69,9 @@ For Qt themes, (i assumed you installed qt5-styleplugins) open ```/etc/environme
 
 For notifications, run ```xfce4-notifyd-config``` from rofi, and change default position to bottom right.
 
-For LightDM, open/create ```/etc/lightdm/lightdm-gtk-greeter.conf``` with your favourite text editor, remove all stuff inside the file, and paste with this new config :
+For LightDM, open/create ```/etc/lightdm/lightdm-webkit2-greeter.conf``` with your favourite text editor, find ```webkit_theme``` strings, and change the value to ```moredark``` until it looked like this :
 ```
-[greeter]
-theme-name = Materia-moredark-compact
-icon-theme-name = Papirus-Dark
-font-name = Noto Sans CJK JP Medium 11
-xft-rgba = rgb
-xft-hintstyle = hintfull
-indicators =
-background = /usr/share/pixmaps/main.png
+webkit_theme        = moredark
 ```
 Save it and reboot.
 
@@ -129,4 +127,5 @@ On this mode, pressing :
 - [EvanKoe](https://github.com/EvanKoe) For i3-gaps & alacritty config files.
 - [ldy3112](https://github.com/ldy3112) For helping me on polybar stuff and make me stay on i3-gaps.
 - [nana-4](https://github.com/nana-4) For the Materia GTK Theme. (dark-compact variant)
+- [dimaglushkov](https://github.com/dimaglushkov) For the lightdm webkit themes as a base.
 - Rectify11 Team for the wallpapers.
