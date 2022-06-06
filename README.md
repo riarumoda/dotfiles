@@ -31,7 +31,7 @@ xorg-server i3-gaps nitrogen xfce4-notifyd brightnessctl dex light-locker alacri
 ```
 Optional but recommended :
 ```
-arandr gpicview l3afpad lxtask-gtk3 pavucontrol mpv
+arandr gpicview l3afpad lxtask-gtk3 pavucontrol mpv copyq
 ```
 Then from AUR :
 ```
